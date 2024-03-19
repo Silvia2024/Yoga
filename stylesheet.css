@@ -1,0 +1,543 @@
+/* https://www.figma.com/file/CjSTiu3Ae80ERc06LvUVzs/Landing-Page-UI-Kit-(Community)?type=design&node-id=0-1&mode=design&t=AGQLQ4TU7AfsjNlq-0 */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Ranade", sans-serif;
+  /*si mette una sola font family */
+}
+
+body {
+  background-color: #fff4eb;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #fff4eb;
+  /* position: fixed;*/
+  top: 0;
+  left: 0;
+  right: 0;
+  /* z-index: 1000; */
+  border-bottom: solid #ca9277 1px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.navbar span {
+  font-family: "Excon";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.hero {
+  background-color: #fff4eb;
+  position: relative;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.backgroundhero {
+  position: absolute;
+  background-color: #ca9277;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 70%;
+}
+
+.herocontainer {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.heroleft {
+  display: flex;
+  flex-direction: column;
+  margin-block: 64px;
+  gap: 100px;
+}
+
+.heroleft h1 {
+  font-family: "Ranade";
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 72px;
+}
+
+.heroleft p {
+  font-family: "Excon";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.04em;
+  text-align: left;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #303030;
+  width: 208px;
+  height: 57px;
+  border-radius: 10px;
+  padding: 15px 40px 15px 40px;
+  color: #fff4eb;
+  font-family: "Ranade";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  justify-content: center;
+}
+
+.heroright {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.circle {
+  height: 120px;
+  width: 120px;
+  background-color: #fff4eb;
+  border-radius: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 20%;
+  right: -60px;
+}
+
+.circle i {
+  font-size: 48px;
+}
+
+.learn {
+  background-color: #303030;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.learntitle {
+  margin-bottom: 48px;
+}
+
+.learntitle h2 {
+  font-family: "Ranade";
+  color: #fff4eb;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 64px;
+  margin-bottom: 32px;
+}
+
+.learntitle p {
+  font-family: "Excon";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25.6px;
+  color: #fff4eb;
+  max-width: 793px;
+}
+
+.learntutorialcards {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 32px;
+}
+
+.card {
+  /*border: red solid 3px;*/
+  width: 380px;
+  height: 284px;
+}
+
+.card img {
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+.titlecard {
+  font-family: "Ranade";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #fff4eb;
+  margin-bottom: 8px;
+}
+
+.descriptioncard {
+  font-family: "Ranade";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  color: #ca9277;
+  text-transform: lowercase;
+}
+
+.sidearrows {
+  display: flex;
+  gap: 32px;
+}
+
+.sidearrowleft {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #fff4eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidearrowright {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #fff4eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.healthylifestyle {
+  padding-top: 96px;
+  padding-bottom: 106px;
+  position: relative;
+  /*qui ho messo il padding piu lungo per gestire imm in absolute*/
+}
+
+.backgroundhealthylifestyle {
+  background-color: #ca9277;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 60%;
+  z-index: -1;
+}
+
+.healthylifestylecontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.healthylifestyleleft {
+  position: relative;
+}
+
+.healthyimgabove {
+  position: absolute;
+  top: 15%;
+  left: 60%;
+}
+
+.healthylifestyleright {
+  display: flex;
+  flex-direction: column;
+  margin-left: 260px;
+  margin-right: 10px;
+}
+
+.healthylifestyleright h3 {
+  font-family: Ranade;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 64px;
+  margin-bottom: 32px;
+}
+
+.healthylifestyleright p {
+  font-family: Excon;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 32px;
+}
+
+.startwithus {
+  position: relative;
+  padding-bottom: 110px;
+}
+
+.backgroundstart {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-image: url(Rectangle\ 21.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.startwithuscontainer {
+  display: flex;
+}
+
+.startleft {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  margin-right: 60%;
+}
+
+.startleft h3 {
+  font-family: Ranade;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 64px;
+  margin-bottom: 32px;
+}
+
+.startleft p {
+  font-family: Excon;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 32px;
+}
+
+.btnlong {
+  height: 67px;
+  width: 336px;
+  padding: 20px 60px 20px 60px;
+}
+
+.discoveryourself {
+  background-color: #303030;
+}
+
+.discovercontainer {
+  padding-top: 72px;
+  padding-bottom: 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.discovercontainer h1 {
+  font-family: Ranade;
+  color: #fff4eb;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 72px;
+  text-align: center;
+  margin-bottom: 64px;
+  margin-right: 250px;
+  margin-left: 250px;
+  /*messo i margini per centrare scritta*/
+}
+
+.btnbrown {
+  color: #fff4eb;
+  background-color: #ca9277;
+}
+
+.explore {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  position: relative;
+}
+
+.backgroundexplore {
+  position: absolute;
+  background-color: #303030;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 50%;
+  z-index: -1;
+}
+
+.btnlong2 {
+  height: 57px;
+  width: 372px;
+  padding: 15px 40px 15px 40px;
+  margin-bottom: 64px;
+}
+
+.explorecontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.explorecontainer h3 {
+  font-family: Ranade;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 64px;
+  text-align: center;
+  margin-bottom: 32px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.explorecontainer p {
+  font-family: Excon;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.videoexplore {
+  width: 996px;
+  height: 564px;
+  margin-bottom: 64px;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 72px;
+}
+
+.upperquote {
+  display: flex;
+  gap: 64px;
+}
+
+.quotationmarks i {
+  color: #fff4eb;
+  font-size: 88px;
+}
+
+.quotetext {
+  font-family: Excon;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 72px;
+  color: #fff4eb;
+  margin-bottom: 64px;
+}
+
+.quotetext > p {
+  margin-bottom: 64px;
+}
+
+.underthequote {
+  display: flex;
+}
+
+.quoteauthor {
+  display: flex;
+  gap: 10px;
+  flex-grow: 1;
+}
+
+.quoteauthorname {
+  font-family: Excon;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.quoteauthortitle {
+  font-family: Excon;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #ca9277;
+}
+
+.sidearrows2 {
+  display: flex;
+  gap: 32px;
+}
+
+.arrow i {
+  color: #303030;
+  font-size: 16px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  /*footer diviso in due parti*/
+}
+
+.footerup {
+  display: flex;
+  justify-content: space-between;
+  gap: 400px;
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
+.footerleft {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.logo2 {
+  height: 70px;
+  width: 135px;
+}
+
+.footerlists {
+  display: flex;
+  gap: 128px;
+}
+
+.footersocial {
+  display: flex;
+  gap: 10px;
+}
+
+.footerlists ul {
+  list-style-type: none;
+}
+
+.footerlists h6 {
+  font-family: Ranade;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  margin-bottom: 16px;
+}
+
+.footerlists li {
+  font-family: Excon;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  margin-bottom: 16px;
+}
+
+.footerdown {
+  background-color: #303030;
+  margin-top: 32px;
+  padding-block: 24px;
+  /*padding block prende sopra e sotto*/
+}
+
+.footerdown p {
+  font-family: Excon;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  color: #fff4eb;
+}
